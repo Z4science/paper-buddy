@@ -82,11 +82,16 @@ curl -sL https://raw.githubusercontent.com/Z4science/paper-buddy/main/scripts/in
 > 输出:建议"折线图 + 局部放大 inset"这个具体方案,而不是泛泛地说"用折线图"。
 
 <p align="center">
-  <img src="assets/examples/line-inset-zoom.png" alt="line inset zoom" width="320">
-  <img src="assets/examples/bubble-log.png" alt="bubble log" width="320">
+  <img src="assets/examples/dashboard.png" alt="composite dashboard" width="300">
+  <img src="assets/examples/joint-scatter.png" alt="joint scatter with marginal histograms" width="300">
 </p>
 
-数据不平衡分类、混淆矩阵、双 Y 轴对比、断轴柱状图等更多绘图场景的效果图,见 [`skill/paper-buddy/README.md`](skill/paper-buddy/README.md) 里的"示例 6"。
+<p align="center">
+  <img src="assets/examples/dual-axis.png" alt="dual axis bar and line" width="300">
+  <img src="assets/examples/violin-box.png" alt="violin plus box" width="300">
+</p>
+
+从帕累托前沿、ROC/PR、混淆矩阵、分面网格、层次聚类热力图、ridgeline 密度图,到折线+局部放大、复合结果 dashboard,更多绘图场景见 [`skill/paper-buddy/README.md`](skill/paper-buddy/README.md) 里的"示例 6"。
 
 ---
 
