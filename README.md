@@ -1,7 +1,7 @@
-<table align="center" border="0">
-  <tr>
-    <td><img src="assets/logo-inline.png" alt="logo" width="80"></td>
-    <td><h1>论文搭子 · paper-buddy</h1></td>
+<table align="center" style="border: none; border-collapse: collapse;">
+  <tr style="border: none;">
+    <td style="border: none;"><img src="assets/logo-inline.png" alt="logo" width="80"></td>
+    <td style="border: none;"><h1 style="margin: 0;">论文搭子 · paper-buddy</h1></td>
   </tr>
 </table>
 
