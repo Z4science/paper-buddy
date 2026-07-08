@@ -1,7 +1,8 @@
-<h1 align="center">
-  <img src="assets/logo-inline.png" alt="论文搭子 paper-buddy logo" width="36" style="vertical-align:middle; margin-right:8px;">
-  论文搭子 · paper-buddy(Claude Skill 版)
-</h1>
+<p align="center">
+  <img src="assets/logo-inline.png" alt="论文搭子 paper-buddy logo" width="120">
+</p>
+
+<h1 align="center">论文搭子 · paper-buddy</h1>
 
 > 这是 [Z4science/paper-buddy](https://github.com/Z4science/paper-buddy) 这套"科研写作 prompt 库"改造成的 Claude Skill。原库是一份可以复制粘贴到任意大模型对话框的 prompt 合集;这个 Skill 版本把它变成 Claude 可以**自动识别场景、自动加载对应 prompt、并直接产出成品文件**的能力,不需要你自己去翻文档找 prompt。
 
