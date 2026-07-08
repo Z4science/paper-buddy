@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-256.png" alt="论文搭子 paper-buddy logo" width="120">
+  <img src="assets/logo.png" alt="论文搭子 paper-buddy logo" width="150">
 </p>
 
 <h1 align="center">论文搭子 · paper-buddy</h1>
