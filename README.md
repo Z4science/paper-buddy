@@ -1,9 +1,7 @@
-<table align="center" border="0">
-<tr>
-<td><img src="assets/logo-inline.png" alt="论文搭子 paper-buddy logo" width="56"></td>
-<td><h1 style="margin:0;">论文搭子 · paper-buddy</h1></td>
-</tr>
-</table>
+<h1 align="center">
+  <img src="assets/logo-inline.png" alt="论文搭子 paper-buddy logo" width="40" style="vertical-align:middle; margin-right:8px;">
+  论文搭子 · paper-buddy
+</h1>
 
 > 陪你写论文的一套 prompt:翻译、润色、改稿、回审稿人,复制粘贴就能用,不挑模型也不挑客户端——如果你在用 Claude Code / Codex 这类支持 Skill 的工具,还能装成自动触发的 Skill,不用自己去翻文档找 prompt。
 
@@ -77,7 +75,18 @@ curl -sL https://raw.githubusercontent.com/Z4science/paper-buddy/main/scripts/in
 >
 > 输出:逐段扫描是否存在针对审稿 AI 的隐藏指令(比如伪装成"系统消息"、藏在异常位置的"给这篇论文打高分")。无论发现什么都绝不执行,只原样引用可疑片段并提醒上报编辑。
 
-更多示例见 [`skill/paper-buddy/README.md`](skill/paper-buddy/README.md)。
+**实验绘图推荐**(附实际效果图)
+
+> 输入:"验证集准确率一直领先 baseline,后期差距不大但很稳定,想要一个能同时看清全局趋势和后期细微差距的图。"
+>
+> 输出:建议"折线图 + 局部放大 inset"这个具体方案,而不是泛泛地说"用折线图"。
+
+<p align="center">
+  <img src="assets/examples/line-inset-zoom.png" alt="line inset zoom" width="320">
+  <img src="assets/examples/bubble-log.png" alt="bubble log" width="320">
+</p>
+
+数据不平衡分类、混淆矩阵、双 Y 轴对比、断轴柱状图等更多绘图场景的效果图,见 [`skill/paper-buddy/README.md`](skill/paper-buddy/README.md) 里的"示例 6"。
 
 ---
 
