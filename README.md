@@ -1,9 +1,7 @@
-<table align="center" style="border: none; border-collapse: collapse;">
-  <tr style="border: none;">
-    <td style="border: none;"><img src="assets/logo-inline.png" alt="logo" width="80"></td>
-    <td style="border: none;"><h1 style="margin: 0;">论文搭子 · paper-buddy</h1></td>
-  </tr>
-</table>
+<h1 align="center">
+  <img src="assets/logo-inline.png" alt="论文搭子 paper-buddy logo" width="80" style="vertical-align:-16px; margin-right:8px;">
+  论文搭子 · paper-buddy
+</h1>
 
 > 陪你写论文的一套 prompt:翻译、润色、改稿、回审稿人,复制粘贴就能用,不挑模型也不挑客户端——如果你在用 Claude Code / Codex 这类支持 Skill 的工具,还能装成自动触发的 Skill,不用自己去翻文档找 prompt。
 
