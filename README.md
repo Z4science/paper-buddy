@@ -1,6 +1,6 @@
 <table align="center" border="0">
   <tr>
-    <td valign="middle"><img src="assets/logo-inline.png" alt="logo" width="80"></td>
+    <td valign="middle"><img src="assets/logo.png" alt="logo" width="80"></td>
     <td valign="middle"><h1 align="left">论文搭子 · paper-buddy</h1></td>
   </tr>
 </table>
