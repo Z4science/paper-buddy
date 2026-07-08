@@ -1,8 +1,9 @@
-<p align="center">
-  <img src="assets/logo-256.png" alt="论文搭子 paper-buddy logo" width="180">
-</p>
-
-<h1 align="center">论文搭子 · paper-buddy</h1>
+<table align="center" border="0">
+<tr>
+<td><img src="assets/logo-inline.png" alt="论文搭子 paper-buddy logo" width="56"></td>
+<td><h1 style="margin:0;">论文搭子 · paper-buddy</h1></td>
+</tr>
+</table>
 
 > 陪你写论文的一套 prompt:翻译、润色、改稿、回审稿人,复制粘贴就能用,不挑模型也不挑客户端——如果你在用 Claude Code / Codex 这类支持 Skill 的工具,还能装成自动触发的 Skill,不用自己去翻文档找 prompt。
 
@@ -19,18 +20,9 @@
 
 ### A. 纯复制粘贴 —— 任何模型、任何客户端,零安装
 
-原始 prompt 全部保留在 [`skill/paper-buddy/references/`](skill/paper-buddy/references/) 下,按科研流程分成 8 个文件。打开对应文件,找到你要的那条 prompt,整段复制粘贴到 ChatGPT / Gemini / DeepSeek / claude.ai 网页版……任何对话框都能用,这条路径不需要装任何东西。
+打开 [`PROMPTS.md`](PROMPTS.md),这一份文件包含了以下全部分类的 prompt,按科研流程从选题一路排到审稿回复。用 Ctrl+F / Cmd+F 搜关键词,或者点文件里的目录跳转,找到要用的那条整段复制粘贴到 ChatGPT / Gemini / DeepSeek / claude.ai 网页版……任何对话框都能用,不需要装任何东西。
 
-| 想做什么 | 打开这个文件 |
-|---|---|
-| 选题判断、文献速读卡片、Related Work 表 | [`ideation-and-literature.md`](skill/paper-buddy/references/ideation-and-literature.md) |
-| Introduction 结构、翻译、缩写扩写 | [`structure-and-writing.md`](skill/paper-buddy/references/structure-and-writing.md) |
-| 中英文润色、逻辑检查、去 AI 味 | [`polishing.md`](skill/paper-buddy/references/polishing.md) |
-| 配图、绘图推荐、一致性自查 | [`figures-and-rigor.md`](skill/paper-buddy/references/figures-and-rigor.md) |
-| 审稿人视角审稿、模型选择、投稿、答辩 | [`gatekeeping-and-submission.md`](skill/paper-buddy/references/gatekeeping-and-submission.md) |
-| 审稿回复 A/B/C/D 模板 | [`rebuttal-templates.md`](skill/paper-buddy/references/rebuttal-templates.md) |
-| **审稿人工具箱**(识别 AI 生成痕迹/数据造假信号/PDF 隐藏指令) | [`reviewer-toolkit.md`](skill/paper-buddy/references/reviewer-toolkit.md) |
-| 分领域适配(生信/CV/材料/物理/化学/人文社科) | [`domain-adaptation.md`](skill/paper-buddy/references/domain-adaptation.md) |
+覆盖的内容:选题判断、文献速读卡片、Related Work 表、Introduction 结构、翻译、缩写扩写、中英文润色、逻辑检查、去 AI 味、配图、绘图推荐、一致性自查、审稿人视角审稿、模型选择、投稿、答辩、审稿回复 A/B/C/D 模板、**审稿人工具箱**(识别 AI 生成痕迹/数据造假信号/PDF 隐藏指令)、分领域适配(生信/CV/材料/物理/化学/人文社科)。
 
 ### B. 装成 Skill —— Claude Code / Codex CLI 自动触发
 
@@ -106,7 +98,9 @@ curl -sL https://raw.githubusercontent.com/Z4science/paper-buddy/main/scripts/in
 ```
 paper-buddy/
 ├── README.md                     # 就是你正在看的这份
+├── PROMPTS.md                     # 全部 prompt 合并成一个文件,复制粘贴党直接看这个
 ├── LICENSE
+├── assets/                        # logo
 ├── scripts/
 │   └── install.sh                # 一行命令安装为 Claude Code / Codex Skill
 ├── .github/workflows/
