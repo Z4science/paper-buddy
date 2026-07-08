@@ -1,0 +1,33 @@
+name: Package skill on release
+
+# 打 tag(如 v1.0.0)推送时自动触发:
+#   git tag v1.0.0 && git push origin v1.0.0
+# 会把 skill/paper-buddy/ 打包成 paper-buddy.skill(其实就是个 zip),
+# 附加到对应的 GitHub Release 里,用户可以直接在 Releases 页面下载,
+# 不用 clone 整个仓库。
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zip skill folder into .skill package
+        run: |
+          cd skill
+          zip -r ../paper-buddy.skill paper-buddy -x "*.DS_Store"
+          cd ..
+
+      - name: Create GitHub Release with .skill asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: paper-buddy.skill
+          generate_release_notes: true
